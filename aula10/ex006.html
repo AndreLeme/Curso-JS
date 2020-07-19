@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evetos DOM</title>
+    <style>
+        div#area {
+            font: normal 20pt Arial;
+            background:rgb(6, 117, 40);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id='area'>
+        Interaja
+    </div>
+
+    <script>
+        var area = document.querySelector('div#area')
+        area.addEventListener('click', clicar)
+        function clicar() {
+            //var area = document.getElementById('area')
+            var area = document.querySelector('div#area')
+            area.innerText = 'Clicou'
+            area.style.background = 'red'
+            
+        }
+        function entrar() {
+            var area = document.getElementById('area')
+            var area = document.querySelector('div#area')
+            area.innerText = 'Entrou'
+        }
+        function sair() {
+            var area = document.getElementById('area')
+            var area = document.querySelector('div#area')
+            area.innerText = 'Saiu'
+            area.style.background = 'green'
+        }
+    </script>
+</body>
+</html>
