@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Localização</title>
+    <style>
+        body {
+            font: normal 16pt Arial;
+        }
+        input {
+            font: normal 16pt Arial;
+        }
+        div#res {
+            margin-top: 15px;
+        }
+    </style>
 </head>
 <body>
     <h1>PAÍS</h1>
@@ -14,8 +25,8 @@
 
     <script>
         function nacionalidade() {
-            var pais = document.querySelector('input#txtpais')
-            if (pais = 'Brasil') {
+            var pais = document.querySelector('input#txtpais').value
+            if (pais == 'Brasil' || pais == 'brasil') {
                 document.querySelector('div#res').innerHTML = `vc é brasileiro`
             } else {
                 document.querySelector('div#res').innerHTML = `vc é estrangeiro`
